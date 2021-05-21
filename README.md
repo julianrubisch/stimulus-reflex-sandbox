@@ -22,7 +22,7 @@ You can see some great examples of SR Sandbox apps on the [StimulusReflex Patter
 
 - Ruby 3.0.1
 - Rails 6.1.3.2
-- *StimulusReflex* 3.4.1
+- *StimulusReflex* 3.5.0.pre0
 - *CableReady* 5.0.0.pre0
 - Redis 6.2.2
 - **NO** database
