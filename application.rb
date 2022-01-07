@@ -74,7 +74,8 @@ class MiniApp < Rails::Application
   Rails.cache = ActiveSupport::Cache::RedisCacheStore.new(url: "redis://localhost:6379/1")
   Rails.logger = ActionCable.server.config.logger = Logger.new($stdout)
   ActionCable.server.config.cable = {"adapter" => "redis", "url" => "redis://localhost:6379/1"}
-
+  StimulusReflex.config.logger = Rails.logger
+  
   routes.draw do
     mount ActionCable.server => "/cable"
     get '___glitch_loading_status___', to: redirect('/')
